@@ -28,6 +28,9 @@ author = 'Mineinjava, Astr0clad'
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom
 # ones.
 extensions = [
+    "sphinxext.opengraph",
+    "myst_parser",
+    'sphinx_copybutton'
 ]
 
 # Add any paths that contain templates here, relative to this directory.
@@ -49,7 +52,7 @@ html_theme = 'furo'
 #MARK: Theme Options
 html_theme_options = {
     "light_css_variables": {
-    
+
         "color-problematic": "#BF616A",
 
         # Base Colors
@@ -95,6 +98,8 @@ html_theme_options = {
 
     },
 }
+
+ogp_site_url = "https://d-botbotbot.github.io/docs/"
 
 # Add any paths that contain custom static files (such as style sheets) here,
 # relative to this directory. They are copied after the builtin static files,
