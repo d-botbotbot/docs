@@ -23,6 +23,9 @@ Required Permission: None
 +help
 ```
 
+## `meta` Category
+Information about the bot.
+
 ### `info`
 
 Get info about the bot
