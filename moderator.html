@@ -5,7 +5,7 @@
   <meta property="og:title" content="Moderator Commands" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://d-botbotbot.github.io/docs/moderator.html" />
-  <meta property="og:description" content="Customization Category: set_prefix: set the bot’s prefix. Required Permission: Server Owner Syntax:+set_prefix <prefix> Arguments: prefix: new prefix for the bot Examples:+set_prefix . +set_prefix -" />
+  <meta property="og:description" content="Customization Category: set_prefix: set the bot’s prefix. Required Permission: Server Owner Syntax:+set_prefix <prefix> Arguments: prefix: new prefix for the bot Examples:+set_prefix . +set_prefix ..." />
   <link rel="index" title="Index" href="genindex.html" /><link rel="search" title="Search" href="search.html" /><link rel="next" title="Command Reference" href="commands.html" /><link rel="prev" title="botbotbot’s documentation!" href="index.html" />
 
     <meta name="generator" content="sphinx-3.5.1, furo 2020.12.30.beta24"/>
@@ -222,6 +222,68 @@
 </div>
 </div>
 </div>
+<div class="section" id="moderation-category">
+<h2><code class="docutils literal notranslate"><span class="pre">Moderation</span></code> Category<a class="headerlink" href="#moderation-category" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="ban">
+<h3><code class="docutils literal notranslate"><span class="pre">ban</span></code><a class="headerlink" href="#ban" title="Permalink to this headline">¶</a></h3>
+<p>Ban one/many members</p>
+<p>Required Permission: Ban Members</p>
+<div class="admonition tip">
+<p class="admonition-title">Tip</p>
+<ul class="simple">
+<li><p>you can ban multiple members at once</p></li>
+<li><p>you can specify members using their username and tag (<code class="docutils literal notranslate"><span class="pre">BotBotBot#7250</span></code>), id (<code class="docutils literal notranslate"><span class="pre">830238445854130208</span></code>) or by @mentioning them</p></li>
+</ul>
+</div>
+<div class="section" id="id1">
+<h4>Syntax<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>+ban &lt;member|members&gt; [reason]
+</pre></div>
+</div>
+</div>
+<div class="section" id="id2">
+<h4>Arguments<a class="headerlink" href="#id2" title="Permalink to this headline">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">member</span></code>: one member to Ban
+<code class="docutils literal notranslate"><span class="pre">members</span></code>: several members to ban
+<code class="docutils literal notranslate"><span class="pre">reason</span></code>: reason for ban (defaults to <code class="docutils literal notranslate"><span class="pre">No</span> <span class="pre">Reason</span> <span class="pre">Given</span></code>)</p>
+</div>
+<div class="section" id="id3">
+<h4>Examples<a class="headerlink" href="#id3" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>+ban &lt;@830238445854130208&gt;
++ban 830238445854130208 @BotBotBot being a bot
+</pre></div>
+</div>
+</div>
+</div>
+<div class="section" id="kick">
+<h3><code class="docutils literal notranslate"><span class="pre">kick</span></code><a class="headerlink" href="#kick" title="Permalink to this headline">¶</a></h3>
+<p>Kick one/many members</p>
+<p>Required Permission: Kick Members</p>
+<div class="admonition seealso">
+<p class="admonition-title">See also</p>
+<p>Functions a lot like <code class="docutils literal notranslate"><span class="pre">+ban</span></code></p>
+</div>
+<div class="section" id="id4">
+<h4>Syntax<a class="headerlink" href="#id4" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-html notranslate"><div class="highlight"><pre><span></span>+kick &lt;member|members&gt; [reason]
+</pre></div>
+</div>
+</div>
+<div class="section" id="id5">
+<h4>Arguments<a class="headerlink" href="#id5" title="Permalink to this headline">¶</a></h4>
+<p><code class="docutils literal notranslate"><span class="pre">member</span></code>: one member to kick
+<code class="docutils literal notranslate"><span class="pre">members</span></code>: several members to kick
+<code class="docutils literal notranslate"><span class="pre">reason</span></code>: reason for kick (defaults to <code class="docutils literal notranslate"><span class="pre">No</span> <span class="pre">Reason</span> <span class="pre">Given</span></code>)</p>
+</div>
+<div class="section" id="id6">
+<h4>Examples<a class="headerlink" href="#id6" title="Permalink to this headline">¶</a></h4>
+<div class="highlight-default notranslate"><div class="highlight"><pre><span></span><span class="o">+</span><span class="n">kick</span> <span class="o">&lt;@</span><span class="mi">830238445854130208</span><span class="o">&gt;</span>
+<span class="o">+</span><span class="n">kick</span> <span class="mi">830238445854130208</span> <span class="nd">@BotBotBot</span> <span class="n">being</span> <span class="n">a</span> <span class="n">bot</span>
+</pre></div>
+</div>
+</div>
+</div>
+</div>
 </div>
 
       </article>
@@ -284,6 +346,21 @@
 <li><a class="reference internal" href="#syntax">Syntax</a></li>
 <li><a class="reference internal" href="#arguments">Arguments</a></li>
 <li><a class="reference internal" href="#examples">Examples</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#moderation-category"><code class="docutils literal notranslate"><span class="pre">Moderation</span></code> Category</a><ul>
+<li><a class="reference internal" href="#ban"><code class="docutils literal notranslate"><span class="pre">ban</span></code></a><ul>
+<li><a class="reference internal" href="#id1">Syntax</a></li>
+<li><a class="reference internal" href="#id2">Arguments</a></li>
+<li><a class="reference internal" href="#id3">Examples</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#kick"><code class="docutils literal notranslate"><span class="pre">kick</span></code></a><ul>
+<li><a class="reference internal" href="#id4">Syntax</a></li>
+<li><a class="reference internal" href="#id5">Arguments</a></li>
+<li><a class="reference internal" href="#id6">Examples</a></li>
 </ul>
 </li>
 </ul>
