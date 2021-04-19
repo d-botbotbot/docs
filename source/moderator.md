@@ -81,3 +81,30 @@ Functions a lot like `+ban`
 +kick <@830238445854130208>
 +kick 830238445854130208 @BotBotBot being a bot
 ```
+
+### `mute/unmute`
+
+Mute/Unmute a user
+
+Required Permission: Manage Messages
+
+#### Syntax
+
+```html
++[un]mute <user> [reason]
+```
+#### Arguments
+
+`user`: user to mute/unmute
+`reason`: [optional] reason for mute/unmute
+
+```{seealso}
+`tip` in `+ban`
+```
+
+#### Examples
+
+```
++mute BotBotBot#7250 too much of a bot
++mute 830238445854130208
+```
